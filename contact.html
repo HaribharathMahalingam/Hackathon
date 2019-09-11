@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Us</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" src="/js/jquery-1.11.2.min.js?20180321043420"></script>
+<script type="text/javascript" src="/js/jquery-migrate-1.1.1.min.js?20180321043420"></script>
+<link rel="stylesheet" type="text/css" href="/js/jquery-ui/css/smoothness/jquery-ui-1.10.3.custom.min.css?20180321043420">
+<script type="text/javascript" src="/js/jquery-ui/js/jquery-ui-1.10.3.min.js?20180321043420"></script>
+<script type="text/javascript" src="/js/core-plugin-pack.js?20180321043420"></script>
+<script type="text/javascript" src="/js/main.js?20180321043420"></script>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: blue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #7ec0ee ;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+h1 {
+    color: black;
+    font-family: verdana;
+    font-size: 300%;
+    float : center;
+
+</style>
+</head>
+<body>
+<h1>Contact Us</h1>
+
+<div class="container">
+  <form action="/index.html" method="POST">
+    <div class="row">
+      <div class="col-25">
+        <label for="First Name">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="first name" name="first name" required placeholder="First Name">
+      </div>
+    </div>
+    
+      <div class="row">
+      <div class="col-25">
+        <label for="Last Name">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="last name" name="last name" placeholder="Last Name">
+      </div>
+    </div>
+    
+     <div class="row">
+      <div class="col-25">
+        <label for="Mail ID">Mail ID</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="mail id" name="mail id" required placeholder="email Address">
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-25">
+          <label for="Subject">Subject of the Query</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="Subject of Query" name="Subject of Query" required placeholder="Query Subject">
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-25">
+        <label for="Query">Description</label>
+      </div>
+      <div class="col-75">
+        <textarea id="Description of the query" name="Description of the query" required placeholder="Enter the description of the message or the query" style="height:200px"></textarea>
+      </div>
+    </div>
+   
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+  
+   
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+    background-color: rgb(178, 187, 235);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1px 15px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+    input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 20%;
+    background-color: #000000;
+    color: #e31515; 
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #d8e0ac;
+}
+
+input[type=reset] {  
+    width: 20%;
+    background-color: #000000;
+    color: #e31515;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=reset]:hover {
+    background-color: #d8e0ac;
+}
+    
+div {
+    border-radius: 5px;
+    background-color: rgb(178, 187, 235);
+    padding: 20px;
+}
+</style>
+<body>
+
+<div class="header">
+  <h1>REGISTER HERE</h1>
+</div>
+
+<div class="topnav">
+   <a href="#"><font face="times new roman" , size=5 , color= >HOME</font></a>
+<a href="#"><font face="times new roman" , size=5 , color= >  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EVENTS</font></a>
+     <a href="#"><font face="times new roman" , size=5 , color= >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ABOUT US    </font></a>
+     <a href="#"><font face="times new roman" , size=5 , color= >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NEW FORM    </font></a>
+    <a href="#"><font face="times new roman" , size=5 , color= >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;REQUIREMENTS   </font></a>
+  <a href="#"><font face="times new roman" , size=5 , color= >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CONTACT US    </font></a>
+</div>
+    
+
+    </body>
+<body>
+    
+    
+    
+    <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("input").focus(function(){
+        $(this).css("background-color", "#d8e0ac");
+    });
+    $("input").blur(function(){
+        $(this).css("background-color", "#d8e0ac");
+    });
+});
+   
+
+</script>
+             
+</head>
+
+<div>
+  
+<form action="">
+    
+    
+        <label for="fname" >First Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    
+    <input type="variable" id="fname" name="firstname" required placeholder="Your name..">&nbsp;&nbsp;
+
+
+    <label for="lname">Last Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="variable" id="lname" name="lastname" required placeholder="Your last name..">
+    <br>
+    <br>
+    
+
+
+     
+Gender:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" name="gender" value="male" checked> Male
+  <input type="radio" name="gender" value="female"> Female
+  <input type="radio" name="gender" value="other"> Other
+<br><br>
+
+   Phone no:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="phone_number" name="phone_number" required maxlength="10"><br><br>
+    
+    
+    DOB:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="date" name="bday" required><br><br>
+    
+    
+    
+    age:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="number" name="age" required min="1"and max="100"><br><br>
+
+Status:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" name="status" value="Student" checked> Student
+  <input type="radio" name="status" value="Employed"> Employed
+  <input type="radio" name="status" value="Unemployed"> Unemployed<br><br>
+  E-mail: &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="email" name="email" size="40"><br><br>
+
+ Address:<br>
+    <br>
+    
+     
+    Street:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="variablle" name="Street" required size="41"><br><br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="variablle" name="Street" required size="41"><br><br>
+    
+ City:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="variablle" name="Street" required size="41"><br><br>
+    
+    State:
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input list="States" name="States">
+  <datalist id="States">
+    <option value="Andhra pradesh">
+    <option value="Arunachal pradesh">
+    <option value="Assam">
+    <option value="Bihar">
+    <option value="Chattisgarh">
+      <option value="Delhi">
+    <option value="Goa">
+    <option value="Gujarat">
+    <option value="Haryana">
+    <option value="Himachal Pradesh">
+          <option value="Jammu and Kashmir">
+    <option value="Jharkhand">
+    <option value="Karnataka">
+    <option value="Kerala">
+    <option value="Madhya Pradesh">
+          <option value="Maharashtra">
+    <option value="Mizoram">
+    <option value="Nagaland">
+    <option value="Odisha">
+    <option value="Punjab">
+          <option value="Rajasthan">
+    <option value="Sikkim">
+    <option value="Telangana">
+    <option value="Tamil Nadu">
+    <option value="Tripura">
+        <option value="Uttarakhand">
+          <option value="Uttara pradesh">
+    <option value="West Bengal">
+    <option value="Andaman and Nicobar islands">
+
+    </datalist><br><br>
+    
+    Postcode:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="number" name="psotcode" required ><br><br><br>
+    
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="submit" value="SUBMIT" size="60">&nbsp;&nbsp;&nbsp;
+    <input type="reset" value="RESET" size="60">
+    
+    
+    
+     </form>
+    
+   
+</div>
+
+</body>
+</html>
+

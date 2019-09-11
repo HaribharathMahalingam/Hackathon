@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    h1 {font-size: 100px;}
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+</style>
+<body>
+<div class="w3-row w3-container">
+    <div class="w3-col l4 m6 w3-light-grey w3-container w3-padding-16">
+         <h1><center>05</center></h1>
+        
+      <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ONGOING VISITS</h2>
+       
+
+    </div>
+
+    <div class="w3-col l4 m6 w3-green w3-container w3-padding-16">
+        <h1><center>08</center></h1>
+      <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;COVERED REPORTS</h2>
+        
+    </div>
+
+    <div class="w3-col l4 m6 w3-red w3-container w3-padding-16">
+        <h1><center>10</center></h1>
+      <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UNCOVERED REPORTS</h2>
+        
+     
+    </div>
+
+   
+  </div>
+    
+    
+  <div id="map" style="width:100%;height:500px"></div>
+
+<script>
+function myMap() {
+  var chennai = new google.maps.LatLng(13.0827,80.2707);
+
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: chennai, zoom: 7};
+  var map = new google.maps.Map(mapCanvas,mapOptions);
+
+  var myCity = new google.maps.Circle({
+    center: chennai,
+    radius: 50000,
+    strokeColor: "#48f76a",
+    strokeOpacity: 0.8,
+    strokeWeight: 2,
+    fillColor: "#48f76a",
+    fillOpacity: 0.4
+  });
+  myCity.setMap(map);
+    
+    var mumbai = new google.maps.LatLng(19.0760, 72.8777);
+
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: mumbai, zoom: 7};
+  var map = new google.maps.Map(mapCanvas,mapOptions);
+
+  var myCity = new google.maps.Circle({
+    center: mumbai,
+    radius: 50000,
+    strokeColor: "#48f76a",
+    strokeOpacity: 0.8,
+    strokeWeight: 2,
+    fillColor: "#48f76a",
+    fillOpacity: 0.4
+  });
+  myCity.setMap(map);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXkNQ0gCm2YNRgzxGCJmEZdkmyyxCWz-0&callback=myMap"></script>
+
+</body>
+</html>
+   
